@@ -1,16 +1,17 @@
 ## AI CUP 2023 秋季賽 圍棋棋力模仿與棋風辨識競賽
 
+Google Drive完整版：[Google Drive](https://drive.google.com/drive/folders/10NGDX9kmChhMvT5X1_HNX55repLJ9nrA?usp=sharing)
+
 ### 安裝套件
 ```
 pip install -r requirements.txt
 ```
 
-
 ### 資料夾說明
 
 - 29_Public Testing Dataset_Private Submission Template_v2 - private測試資料
 - 29_Public Testing Dataset_Public Submission Template_v2 - public測試資料
-- 29_Training Dataset - 訓練資料
+- 29_Training Dataset - 訓練資料([連結](https://drive.google.com/drive/folders/1DhTLmLOpghotUz32FDI1W7xhTjLRE-yW?usp=drive_link))
 - models - 棋力訓練時的model weight會儲存在這裡
 - models_style - 棋風訓練時的model weight會儲存在這裡
 - submissions - inference後的csv檔會存在這裡
@@ -86,7 +87,7 @@ pip install -r requirements.txt
 
 
 ## 訓練變數說明
->棋力 trainig
+>棋力 training
 ```
 BATCH_SIZE = 4 (視電腦GPU大小可以調小)
 LEARNING_RATE = 0.001(可調整)
@@ -95,7 +96,7 @@ CHANNELS_2 = 16(無法更動)
 NUM_CLASSES = 361 (無法更動)
 ```
 
->棋風 trainig
+>棋風 training
 ```
 CROP_SIZE = 19(crop棋盤的輸入大小，最小為5，最大為19)
 BATCH_SIZE = 64(視電腦GPU大小可以調小)
