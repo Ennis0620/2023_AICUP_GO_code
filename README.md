@@ -21,17 +21,19 @@ pip install -r requirements.txt
     - board_up - 提子相關
     - preprocess - 前處理
     - models - 淘汰的模型架構
+  ***********
   - valid_id.txt - v1 data被分去valid的id，在執行v2時會需要用到( pytorch_check_v1_valid_id.py產生)
+  ***********
   - pytorch_Merge17_v1_train.py -訓練有落子順序的v1
   - pytorch_Merge17_v1_train(augmentation).py -訓練有落子順序的v1 augmentation
   - pytorch_Merge17_v2_train_another_data.py -訓練有落子順序的v2
   - pytorch_Merge17_v2_train_another_data(augmentation).py -訓練有落子順序的v2 augmentation
-
+  ***********
   - pytorch_Merge20_no_Seq_v1_train.py -訓練沒落子順序的v1
   - pytorch_Merge20_no_Seq_v1_train(augmentation).py -訓練沒落子順序的v1 augmentation
   - pytorch_Merge20_no_Seq_v2_train_another_data.py -訓練沒落子順序的v2
   - pytorch_Merge20_no_Seq_v2_train_another_data(augmentation).py -訓練沒落子順序的v2 augmentation
-
+  ***********
   - pytorch_Merge17_inference.py -單獨一個有落子順序的model做inference
   - pytorch_Merge20_no_Seq_inference -單獨一個沒落子順序的model做inference
   - pytorch_ensemble_TTA.py -合併v1、v2有落子順序的 + v1、v2無落子順序的weight做ensemble + TTA
@@ -43,19 +45,20 @@ pip install -r requirements.txt
     - board_up - 提子相關
     - preprocess - 前處理
     - models - 淘汰的模型架構
+  ***********
   - pytorch_style21_10fold.py -(提子+黑白互換 會練10個model)
   - pytorch_style28_5fold -(提子+不提子+黑白互換 會練5個model)
-
+  ***********
   - pytorch_style21_10fold_inference.py -單獨的model做預測
   - pytorch_style21_10fold_inference_ensemble.py - 讀CROP_SIZE_LIST內的model weight投票
   - pytorch_style21_10fold_inference_ensemble_TTA.py - 讀CROP_SIZE_LIST內的model weight投票、TTA
   - pytorch_style21_10fold_inference_ensemble_TTA_use_prob.py - 讀CROP_SIZE_LIST內的model weight投票(用機率累加)、TTA 
-  - 
+  ***********
   - pytorch_style28_5fold_inference.py -單獨的model做預測
   - pytorch_style28_5fold_inference_ensemble.py - 讀CROP_SIZE_LIST內的model weight投票
   - pytorch_style28_5fold_inference_ensemble_TTA.py - 讀CROP_SIZE_LIST內的model weight投票、TTA
   - pytorch_style28_5fold_inference_ensemble_TTA_use_prob.py - 讀CROP_SIZE_LIST內的model weight投票(用機率累加)、TTA
-  - 
+  ***********
   - pytorch_style21_28_all_ensemble_TTA.py - 合併2種用不同augmentation訓練的weight做預測、投票、TTA
   - pytorch_style21_28_all_ensemble_TTA_use_prob.py - 合併2種用不同augmentation訓練的weight做預測、投票(用機率累加)、TTA
 
