@@ -39,10 +39,10 @@ pip install -r requirements.txt
 >棋風
 - main_style - 棋風code
   - models_block - 模型架構
-    - utils
-      - board_up - 提子相關
-      - preprocess - 前處理
-      - models - 淘汰的模型架構
+  - utils
+    - board_up - 提子相關
+    - preprocess - 前處理
+    - models - 淘汰的模型架構
   - pytorch_style21_10fold.py -(提子+黑白互換 會練10個model)
   - pytorch_style28_5fold -(提子+不提子+黑白互換 會練5個model)
 
